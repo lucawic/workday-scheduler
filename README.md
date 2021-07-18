@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-UA Coding BootCamp
+UA Coding BootCamp\
 Module Challenge #5: Work Day Scheduler (with starter code)
 
 ## Objectives
