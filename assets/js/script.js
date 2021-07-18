@@ -20,9 +20,11 @@ function timeTracker() {
     //get the current hour
     var timeNow = moment().hour();
 
+
 //for loop to loop through the hours of the work day
 $(".time-block").each(function () {
     var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+
 
     //this will check the time and add the corresponding background color indicators
     if (blockTime < timeNow) {
@@ -42,16 +44,16 @@ $(".time-block").each(function () {
 }
     
   // Get item from local storage if any
-  $("#hour8 .description").val(localStorage.getItem("hour5"));
-  $("#hour9 .description").val(localStorage.getItem("hour6"));
-  $("#hour10 .description").val(localStorage.getItem("hour7"));
-  $("#hour11 .description").val(localStorage.getItem("hour8"));
-  $("#hour12 .description").val(localStorage.getItem("hour9"));
-  $("#hour13 .description").val(localStorage.getItem("hour10"));
-  $("#hour14 .description").val(localStorage.getItem("hour11"));
-  $("#hour15 .description").val(localStorage.getItem("hour12"));
-  $("#hour16 .description").val(localStorage.getItem("hour13"));
-  $("#hour17 .description").val(localStorage.getItem("hour14"));
+  $("#hour5 .description").val(localStorage.getItem("hour5"));
+  $("#hour6 .description").val(localStorage.getItem("hour6"));
+  $("#hour7 .description").val(localStorage.getItem("hour7"));
+  $("#hour8 .description").val(localStorage.getItem("hour8"));
+  $("#hour9 .description").val(localStorage.getItem("hour9"));
+  $("#hour10 .description").val(localStorage.getItem("hour10"));
+  $("#hour11 .description").val(localStorage.getItem("hour11"));
+  $("#hour12 .description").val(localStorage.getItem("hour12"));
+  $("#hour13 .description").val(localStorage.getItem("hour13"));
+  $("#hour14 .description").val(localStorage.getItem("hour14"));
 
   timeTracker();
 })
