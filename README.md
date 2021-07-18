@@ -18,3 +18,10 @@ WHEN I click the save button for that time block\
 THEN the text for that event is saved in local storage\
 WHEN I refresh the page\
 THEN the saved events persist\
+
+### Code Examples
+
+This code displays the current time and date and it is done so in the header of the html doc, where the hero element lies.\ 
+    var currentDate = moment().format('LLLL');\
+    hero.append(currentDate);
+
