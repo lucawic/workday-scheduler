@@ -20,8 +20,19 @@ WHEN I refresh the page\
 THEN the saved events persist\
 
 ### Code Examples
-
+#### ex1\
 This code displays the current time and date and it is done so in the header of the html doc, where the hero element lies.\ 
+\
     var currentDate = moment().format('LLLL');\
-    hero.append(currentDate);
+    hero.append(currentDate);\
+\
+the moment format is a CDN called momentjs that is used for displaying dates and times. was created in 2011 and is currently getting phased out of use by modern tech./
+#### ex2\
+$(".time-block").each(function () {\
+    var blockTime = parseInt($(this).attr("id").split("hour")[1]);\
+    \
+This is a jquery function that loops through the timeblocks (hours of the day) in the scheduler and is important for other functionality like highlighting the past present and future "time-blocks" in different colors.
+
+    
+  
 
